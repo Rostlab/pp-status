@@ -6,12 +6,98 @@
     <title>PredictProtein Service Announcements</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="description" content="Latest service announcements and updates for PredictProtein">
+    <style>
+        /* Custom styles for the header to match original */
+        .top-nav-bar {
+            width: 100%;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .top-nav-bar td {
+            padding: 10px 20px;
+        }
+        #logo img {
+            height: 40px;
+            max-width: inherit;
+        }
+        #navbar a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar .brand {
+            color: white;
+            font-weight: bold;
+        }
+        .navbar .nav li a {
+            color: white;
+        }
+        .btn-navbar {
+            background-color: #34495e;
+            border: none;
+            padding: 4px 6px;
+        }
+        .icon-bar {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background-color: white;
+            margin: 2px 0;
+        }
+        @media (max-width: 767px) {
+            .hidden-phone { display: none; }
+        }
+        @media (min-width: 768px) {
+            .visible-phone { display: none; }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
+    <!-- Banner -->
+    <div id="banner">
+        <table class="top-nav-bar hidden-phone">
+            <tbody>
+                <tr>
+                    <td id="logo">
+                        <!-- Placeholder for PredictProtein logo -->
+                        <img src="/pp-logo.png" alt="PredictProtein logo" style="max-width: inherit;">
+                    </td>
+                    <td style="width: 100%; text-align: center;">
+                        <h1 class="text-2xl font-bold text-gray-900">Service Announcements</h1>
+                    </td>
+                    <td id="lab-logo" style="text-align: right;">
+                        <!-- Placeholder for Lab logo -->
+                        <img src="/rl-logo.png" alt="Lab logo" style="max-width: inherit;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Mobile Navigation -->
+        <div class="navbar navbar-fixed-top visible-phone">
+            <div class="navbar-inner">
+                <div class="container flex justify-between items-center p-4">
+                    <div class="flex items-center">
+                        <img src="/api/placeholder/120/30" alt="PredictProtein logo" class="h-8">
+                    </div>
+                    <h1 class="text-white text-lg font-bold">PredictProtein Service Announcements</h1>
+                    <div class="flex items-center">
+                        <img src="/api/placeholder/80/30" alt="Lab logo" class="h-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <!-- Header -->
         <div class="text-center mb-12">
-            <h1 class="text-3xl font-bold text-gray-900 mb-2">PredictProtein Service Announcements</h1>
             <p class="text-gray-600">Current status and important updates</p>
         </div>
 
@@ -21,7 +107,7 @@
             <article class="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-500">
                 <!-- Date -->
                 <div class="text-sm text-gray-500 mb-2">
-                    <time datetime="2024-12-12">December 12, 2024</time>
+                    <time datetime="2025-05-12">May 12, 2025</time>
                 </div>
                 
                 <!-- Title -->
